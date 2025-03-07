@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.title{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 800;
+    font-size: 6rem;
+}
+.value{
+    font-size: 6rem;
+    font-weight: 700;
+    /* margin: 6rem 0;  Change margin to be vertical only */
+    text-align: center;  /* Add this line */
+    display: block;  /* Add this line */
+    width: 100%;
+    margin-bottom: 2rem;  /* Add this line */
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    top: 10px;
+}
+.btn {
+    padding: 0.5rem 1.5rem;
+    border: 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+.decrease:hover{
+    background-color: red;
+    transition: all 1s;
+}
+.increase:hover{
+    background-color: green;
+    transition: all 1s;
+}
+.reset:hover{
+    background-color: #585757;
+}
+.btn:active {
+    background-color: #e0e0e0;
+    transform: translateY(1px);
+}
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #585757;
+}
+.btn{
+    box-shadow: 0 2px 4px #585757;
+}
+@media(max-width:767px){
+    .container{
+        margin-top: 2rem;
+    }
+    .title{
+        font-size: 4rem;
+
+    }
+    .value{
+        font-size: 4rem;
+    }
+    .btn{
+        font-size: 1rem;
+        margin: 10px 10px;
+        padding: 10px 10px;
+    }
+}
